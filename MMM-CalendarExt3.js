@@ -2,8 +2,9 @@
 /* x-eslint-disable @stylistic/linebreak-style, @stylistic/semi, @stylistic/indent */
 /* eslint-disable no-undef, no-unused-vars */
 
-const popoverSupported = (typeof HTMLElement !== "undefined") ? Object.hasOwn(HTMLElement, "popover") : false
-if (!popoverSupported) console.info("This browser doesn't support popover yet. Update your system.")
+//const popoverSupported = (typeof HTMLElement !== "undefined") ? Object.hasOwn(HTMLElement, "popover") : false
+//if (!popoverSupported) console.info("This browser doesn't support popover yet. Update your system.")
+const popoverSupported = true
 const animationSupported = (typeof window !== "undefined" && window?.mmVersion) ? +(window.mmVersion.split(".").join("")) >= 2250 : false
 
 Module.register("MMM-CalendarExt3", {
